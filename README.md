@@ -8,12 +8,12 @@ Platform Hub is a unified DevOps operations tool that connects tickets, deployme
 
 | Module | Description | Status |
 |--------|-------------|--------|
-| 🚀 **Release Readiness** | Connects Jira & GitHub; flags missing test scope, UAT gaps, and approval blockers before go/no-go | `v1.0 — GA` |
-| 📡 **Integration Monitor** | Monitors APIs, webhooks, EDI feeds, and scheduled jobs; surfaces silent failures and delayed data | `v1.0 — GA` |
-| 💰 **Cloud Cost Tracker** | Maps AWS/GCP spend to service, team, and feature; flags idle resources and anomalies | `v0.9 — Beta` |
-| 🛠️ **Self-Service Envs** | Dev-requested environments from approved templates — no infra ticket needed | `v1.0 — GA` |
-| 🚨 **Incident Triage** | Groups alerts, builds timeline, suggests runbooks, correlates recent changes | `v0.9 — Beta` |
-| 🛡️ **Infra Guardrail** | Scans Terraform PRs for risky settings and policy drift; explains findings in plain language | `v0.8 — Alpha` |
+| **Release Readiness** | Connects Jira & GitHub; flags missing test scope, UAT gaps, and approval blockers before go/no-go | `v1.0 — GA` |
+| **Integration Monitor** | Monitors APIs, webhooks, EDI feeds, and scheduled jobs; surfaces silent failures and delayed data | `v1.0 — GA` |
+| **Cloud Cost Tracker** | Maps AWS/GCP spend to service, team, and feature; flags idle resources and anomalies | `v0.9 — Beta` |
+| **Self-Service Envs** | Dev-requested environments from approved templates — no infra ticket needed | `v1.0 — GA` |
+| **Incident Triage** | Groups alerts, builds timeline, suggests runbooks, correlates recent changes | `v0.9 — Beta` |
+| **Infra Guardrail** | Scans Terraform PRs for risky settings and policy drift; explains findings in plain language | `v0.8 — Alpha` |
 
 ## Tech Stack
 
