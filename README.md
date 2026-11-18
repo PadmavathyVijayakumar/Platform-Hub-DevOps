@@ -1,29 +1,19 @@
-# Module 5 — Incident Triage Assistant
+# Module 3 — Cloud Cost-to-Owner Tracker
 
-Groups alerts, builds a timeline, links runbooks, and correlates recent changes.  
-Cuts mean time to resolution by getting engineers to the right context in under 2 minutes.
+Maps AWS/GCP/Kubernetes spend to teams, services, and features.  
+Suggests idle resource cleanup. No more mystery bills.
 
 ## Key Features
 
-- **Alert grouping** — deduplicates and clusters related PagerDuty/Datadog alerts into a single incident
-- **Automated timeline** — stitches deploy events, config changes, and anomaly spikes into a chronological view
-- **Runbook linker** — matches incident signals against a runbook index to surface the most relevant SOPs
-- **Change correlator** — highlights code merges and infra changes in the 2 h before first alert
-- **Severity classifier** — auto-sets P1/P2/P3 based on blast radius (services affected × user impact)
-- **Slack war-room** — creates a dedicated channel, posts timeline, and pages the right on-call rotation
+- **Cost attribution engine** — tags-based mapping from AWS Cost Explorer → team/service/feature
+- **Anomaly alerts** — ML-based spike detection; Slack alert when spend jumps >15% week-over-week
+- **Idle resource scanner** — finds stopped EC2s, unattached EBS volumes, unused RDS, low-utilisation nodes
+- **Budget guardrails** — per-team monthly budgets with 80%/100% alerts
+- **Chargeback reports** — monthly PDF/CSV export per team for finance
 
 ## Integrations
 
-- PagerDuty (alerts + escalation)
-- Datadog (metrics + logs)
-- GitHub (recent merges)
-- Confluence (runbook index)
-- Slack (war-room automation)
-
-## Key Metrics (post-launch)
-
-| Metric | Before | After |
-|--------|--------|-------|
-| Mean time to acknowledge | 18 min | 4 min |
-| Mean time to resolve (P1) | 94 min | 51 min |
-| Correct runbook surfaced | — | 78% of incidents |
+- AWS Cost Explorer API
+- AWS CloudWatch (utilisation data)
+- GCP Billing API
+- Kubernetes Metrics Server (node utilisation)
